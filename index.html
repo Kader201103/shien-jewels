@@ -9,27 +9,32 @@
 <body>
     <header>
         <div class="logo">
-            <img src="shein.png" alt="Shein Jewels Logo">
+            <img src="shein.png" alt="Shein Jewels Logo" loading="lazy">
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="shop.html" title="Shop">Shop</a></li>
+                <li><a href="about.html" title="About Us">About Us</a></li>
+                <li><a href="contact.html" title="Contact Us">Contact Us</a></li>
             </ul>
         </nav>
         <div class="cart">
-            <a href="cart.html"><img src="icon.1.png" alt="Cart"></a>
+            <a href="cart.html" title="Cart"><img src="icon.1.png" alt="Cart" loading="lazy"></a>
         </div>
         <div class="social-media">
-            <a href="https://www.instagram.com/abdelkader_jl03/" target="_blank" aria-label="Instagram"><img src="icon.3.png" alt="Instagram"></a>
-            <a href="https://www.facebook.com/profile.php?id=61550692139613" target="_blank" aria-label="Facebook"><img src="icon.2.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/abdelkader_jl03/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <img src="icon.3.png" alt="Instagram" loading="lazy">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61550692139613" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <img src="icon.2.png" alt="Facebook" loading="lazy">
+            </a>
         </div>
         <div class="add-product">
-            <button onclick="location.href='add-product.html'">Add Product</button>
+            <button onclick="location.href='add-product.html'" title="Add Product">Add Product</button>
         </div>
     </header>
+
     <div class="centered-text">
         <h1>Welcome to Shein Jewels</h1>
     </div>
@@ -37,36 +42,8 @@
     <footer>
         <p>&copy; 2023 Shein Jewels. All rights reserved.</p>
     </footer>
-    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js"></script><header>
-    <div class="logo">
-        <img src="shein.png" alt="Shein Jewels Logo" loading="lazy">
-    </div>
-    <nav>
-        <ul>
-            <li><a href="index.html" title="Home">Home</a></li>
-            <li><a href="shop.html" title="Shop">Shop</a></li>
-            <li><a href="about.html" title="About Us">About Us</a></li>
-            <li><a href="contact.html" title="Contact Us">Contact Us</a></li>
-        </ul>
-    </nav>
-    <div class="cart">
-        <a href="cart.html" title="Cart"><img src="icon.1.png" alt="Cart" loading="lazy"></a>
-    </div>
-    <div class="social-media">
-        <a href="https://www.instagram.com/abdelkader_jl03/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="icon.3.png" alt="Instagram" loading="lazy"></a>
-        <a href="https://www.facebook.com/profile.php?id=61550692139613" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src="icon.2.png" alt="Facebook" loading="lazy"></a>
-    </div>
-    <div class="add-product">
-        <button onclick="location.href='add-product.html'" title="Add Product">Add Product</button>
-    </div>
-</header>
-<div class="centered-text">
-    <h1>Welcome to Shein Jewels</h1>
-</div>
 
-<footer>
-    <p>&copy; 2023 Shein Jewels. All rights reserved.</p>
-</footer>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js"></script>
 </body>
-  </html>
+</html>
