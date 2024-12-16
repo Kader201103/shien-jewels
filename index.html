@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shein Jewels</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="shein.png" alt="Shein Jewels Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="cart">
+            <a href="cart.html"><img src="icon.1.png" alt="Cart"></a>
+        </div>
+        <div class="social-media">
+            <a href="https://www.instagram.com/abdelkader_jl03/" target="_blank" aria-label="Instagram"><img src="icon.3.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/profile.php?id=61550692139613" target="_blank" aria-label="Facebook"><img src="icon.2.png" alt="Facebook"></a>
+        </div>
+        <div class="add-product">
+            <button onclick="location.href='add-product.html'">Add Product</button>
+        </div>
+    </header>
+    <div class="centered-text">
+        <h1>Welcome to Shein Jewels</h1>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Shein Jewels. All rights reserved.</p>
+    </footer>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js"></script><header>
+    <div class="logo">
+        <img src="shein.png" alt="Shein Jewels Logo" loading="lazy">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="shop.html" title="Shop">Shop</a></li>
+            <li><a href="about.html" title="About Us">About Us</a></li>
+            <li><a href="contact.html" title="Contact Us">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="cart">
+        <a href="cart.html" title="Cart"><img src="icon.1.png" alt="Cart" loading="lazy"></a>
+    </div>
+    <div class="social-media">
+        <a href="https://www.instagram.com/abdelkader_jl03/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="icon.3.png" alt="Instagram" loading="lazy"></a>
+        <a href="https://www.facebook.com/profile.php?id=61550692139613" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src="icon.2.png" alt="Facebook" loading="lazy"></a>
+    </div>
+    <div class="add-product">
+        <button onclick="location.href='add-product.html'" title="Add Product">Add Product</button>
+    </div>
+</header>
+<div class="centered-text">
+    <h1>Welcome to Shein Jewels</h1>
+</div>
+
+<footer>
+    <p>&copy; 2023 Shein Jewels. All rights reserved.</p>
+</footer>
+</body>
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDNlV7CfGOn9gkxsj4snzAXhhl3eMcEZps",
+      authDomain: "shine-jewels.firebaseapp.com",
+      projectId: "shine-jewels",
+      storageBucket: "shine-jewels.firebasestorage.app",
+      messagingSenderId: "274340472157",
+      appId: "1:274340472157:web:847dd5e6d9a5b8a1c6b4b4",
+      measurementId: "G-PXG78QEBMC"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    npm install -g firebase-tools
+  </script>
+  </html>

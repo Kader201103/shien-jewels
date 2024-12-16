@@ -1,0 +1,195 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('back.1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.455);
+    color: black;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover,
+header nav ul li a:focus {
+    background-color: rgba(0, 123, 255, 0.7);
+    color: white;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.category {
+    text-align: center;
+}
+
+.category img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    text-align: center;
+    background: none;
+    border: none;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.445);
+    color: black;
+    margin-top: auto;
+}
+
+.product-detail {
+    padding: 50px;
+    min-height: 300px; 
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.centered-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: calc(100vh - 100px);
+    color: black;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 0;
+}
+
+#contact {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+#contact h2 {
+    text-align: center;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact ul li {
+    margin: 10px 0;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#contact label {
+    margin-bottom: 5px;
+}
+
+#contact input, #contact textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+}
+
+#contact button {
+    padding: 10px; 
+    background-color: black; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+#contact button:hover {
+    background-color: black; 
+}
+
+main {
+    padding: 20px;
+    text-align: center; 
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 10px 0; 
+}
+.add-product {
+    text-align: center; /* Center the button */
+    margin: 20px 0; /* Add some vertical space */
+}
+
+.add-product button {
+    background-color: #4A5D23; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+    font-size: 16px; /* Font size */
+}
+
+.add-product button:hover {
+    background-color: #3A4D13; /* Darker shade on hover */
+}
