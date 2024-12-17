@@ -181,7 +181,7 @@ p {
 }
 
 .add-product button {
-    background-color: #4A5D23; /* Button background color */
+    background-color: black; /* Button background color */
     color: white; /* Button text color */
     border: none; /* Remove border */
     padding: 10px 20px; /* Add padding */
@@ -191,5 +191,67 @@ p {
 }
 
 .add-product button:hover {
-    background-color: #3A4D13; /* Darker shade on hover */
+    background-color: white; /* Darker shade on hover */
+}
+.add-product-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-list {
+    margin-top: 20px;
+}
+
+#product-list-ul {
+    list-style: none;
+    padding: 0;
+}
+
+#product-list-ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#product-list-ul li:last-child {
+    border-bottom: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.product-image {
+    width: 400px; /* Adjust width */
+    height: 400px; /* Adjust height */
+    object-fit: cover; /* Ensures the image fits nicely without distortion */
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+.center-content {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center align horizontally */
+    justify-content: center; /* Center align vertically if needed */
+    text-align: center; /* Center text inside the container */
+    margin-top: 50px; /* Adjust spacing from the top of the page */
+}
+
+.center-image {
+    width: 200px; /* Adjust image width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Add space between image and text */
+}
+
+.center-phrase {
+    font-size: 1.5rem; /* Adjust text size */
+    color: #333; /* Text color */
+    font-family: 'Arial', sans-serif; /* Optional: Set a font style */
 }

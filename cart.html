@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Cart - Shein Jewels</title>
-    <link rel="stylesheet" href="styles.css"> 
+    <title>Cart - Shein Jewels</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="shein.png" alt="Logo">
+            <img src="shein.png" alt="Shein Jewels Logo">
         </div>
         <nav>
             <ul>
@@ -17,26 +17,68 @@
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="cart.html">Cart</a></li>
+            </ul>
         </nav>
         <div class="cart">
-            <a href="#"><img src="icon.1.png" alt="Cart"></a>
+            <a href="cart.html"><img src="icon.1.png" alt="Cart"></a>
         </div>
         <div class="social-media">
-            <a href="#"><img src="icon.3.png" alt="Instagram"></a>
-            <a href="#"><img src="icon.2.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/abdelkader_jl03/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <img src="icon.3.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61550692139613" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <img src="icon.2.png" alt="Facebook">
+            </a>
         </div>
-    </header>
     </header>
 
     <main>
         <h1>Your Cart</h1>
-        <p>Your cart is currently empty.</p>
-        <p><a href="shop.html">Continue Shopping</a></p>
+        <ul id="cart-list"></ul>
+        <button id="checkout-button" onclick="checkout()">Checkout</button>
     </main>
 
     <footer>
         <p>&copy; 2023 Shein Jewels. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cartList = document.getElementById('cart-list');
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            if (cart.length === 0) {
+                cartList.innerHTML = '<p>Your cart is empty.</p>';
+            } else {
+                cart.forEach((product, index) => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `
+                        <img src="${product.image}" alt="${product.name}" class="product-image">
+                        <h3>${product.name}</h3>
+                        <p>${product.description}</p>
+                        <p>Price: DT${product.price.toFixed(2)}</p>
+                        <button onclick="removeFromCart(${index})">Remove</button>
+                    `;
+                    cartList.appendChild(li);
+                });
+            }
+        });
+
+        function removeFromCart(index) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.splice(index, 1); // Remove the selected product
+            localStorage.setItem('cart', JSON.stringify(cart)); // Update cart in localStorage
+            alert('Product removed from cart.');
+            location.reload(); // Reload the page to update the cart
+        }
+
+        function checkout() {
+            if (confirm('Proceed to checkout?')) {
+                localStorage.removeItem('cart'); // Clear the cart
+                alert('Thank you for your purchase!');
+                location.reload(); // Reload the page
+            }
+        }
+    </script>
 </body>
 </html>
